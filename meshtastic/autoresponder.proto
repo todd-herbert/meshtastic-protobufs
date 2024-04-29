@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package meshtastic;
+
+option csharp_namespace = "Meshtastic.Protobufs";
+option go_package = "github.com/meshtastic/go/generated";
+option java_outer_classname = "AutoresponderConfigProtos";
+option java_package = "com.geeksville.mesh";
+option swift_prefix = "";
+
+/*
+ * Autoresponder module configuration.
+ */
+message AutoresponderConfig {
+  /*
+   * Predefined message, to be sent as an auto-response
+   */
+  string response_text = 1;
+
+  /*
+   * Nodes to which we should respond
+   */
+  repeated fixed32 permitted_nodes = 2;
+}

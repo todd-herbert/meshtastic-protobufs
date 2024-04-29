@@ -683,6 +683,16 @@ message ModuleConfig {
   }
 
   /*
+     Autoresponder module
+  */
+  message AutoresponderConfig {
+    /*
+     * Sets whether the module is active
+     */
+    bool enabled = 1;
+  }
+
+  /*
    * TODO: REPLACE
    */
   oneof payload_variant {
@@ -750,6 +760,11 @@ message ModuleConfig {
      * TODO: REPLACE
      */
     PaxcounterConfig paxcounter = 13;
+
+    /*
+     * TODO: REPLACE
+     */
+    AutoresponderConfig autoresponder = 14;
   }
 }
 
