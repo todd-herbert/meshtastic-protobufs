@@ -306,6 +306,36 @@ message AdminMessage {
     bool remove_fixed_position = 42;
 
     /*
+     * Get the text for the autoresponder module in the response to this message.
+     */
+    bool get_autoresponder_message_request = 43;
+
+    /*
+     * Get the text for the autoresponder module in this response.
+     */
+    string get_autoresponder_message_response = 44;
+
+    /*
+     * Set the text for the autoresponder module.
+     */
+    string set_autoresponder_message = 45;
+
+    /*
+     * In response to this message, get the list of nodes to which the autoresponder will reply
+     */
+    bool get_autoresponder_permittednodes_request = 46;
+
+    /*
+     * In this response, get the list of nodes to which the autoresponder will reply
+     */
+    string get_autoresponder_permittednodes_response = 47;
+
+    /*
+     * Set the list of nodes to which the autoresponder module will reply
+     */
+    string set_autoresponder_permittednodes = 48;
+
+    /*
      * Begins an edit transaction for config, module config, owner, and channel settings changes
      * This will delay the standard *implicit* save to the file system and subsequent reboot behavior until committed (commit_edit_settings)
      */

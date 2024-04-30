@@ -7,6 +7,14 @@
 *AdminMessage.set_ringtone_message max_size:231
 *AdminMessage.get_ringtone_response max_size:231
 
+# Autoresponder module: message 
+*AdminMessage.set_autoresponder_message max_size:201
+*AdminMessage.get_autoresponder_message_response max_size:201
+
+# Autoresponder module: list of nodes to acknowledge
+*AdminMessage.set_autoresponder_permittednodes max_size:201
+*AdminMessage.get_autoresponder_permittednodes_response max_size:201
+
 *HamParameters.call_sign max_size:8
 *HamParameters.short_name max_size:6
 *NodeRemoteHardwarePinsResponse.node_remote_hardware_pins max_count:16
