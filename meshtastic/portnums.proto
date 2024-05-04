@@ -195,11 +195,6 @@ enum PortNum {
    * Provides unencrypted information about a node for consumption by a map via MQTT
    */
   MAP_REPORT_APP = 73;
-
-  /*
-   * Responds with a user-defined message, on selected channels 
-   */
-  AUTORESPONDER_APP = 74;
   
 
   /*
