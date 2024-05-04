@@ -695,6 +695,12 @@ message ModuleConfig {
      * Sets whether the module responds to messages in channel
      */
     bool enabled_in_channel = 2;
+
+
+    /*
+     * How long will Autoresponder wait before responding again to the same node
+     */
+    bool repeat_minutes = 3;
   }
 
   /*
