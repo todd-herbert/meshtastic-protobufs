@@ -700,7 +700,7 @@ message ModuleConfig {
     /*
      * How long will Autoresponder wait before responding again to the same node
      */
-    bool repeat_hours = 3;
+    fixed32 repeat_hours = 3;
   }
 
   /*
