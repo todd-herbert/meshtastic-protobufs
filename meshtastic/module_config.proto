@@ -701,6 +701,18 @@ message ModuleConfig {
      * How long will Autoresponder wait before responding again to the same node
      */
     fixed32 repeat_hours = 3;
+
+    /*
+     * How long until the Autoresponder is automatically disabled
+     * Mandatory for in-channel responses, with hard-coded maximum
+     * Optional for DM responses, no enforced maximum
+     */
+    fixed32 expiration_hours = 4;
+
+    /* 
+     * Should expiration_hours also apply to DM responses?
+     */
+    bool should_dm_expire = 5;
   }
 
   /*
