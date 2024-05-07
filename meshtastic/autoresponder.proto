@@ -13,10 +13,12 @@ option swift_prefix = "";
  */
 message AutoresponderConfig {
   /*
-   * How many times has the device booted since enabled in-channel
+   * How many times the device has booted since module enabled
    * Prevents a frequently rebooting node from bypassing rate limits indefinitely
+   * Always applies to in-channel responses, optionally applies to DMs
+   * Doesn't count when this protection is not needed
    */
-  fixed32 bootcount_since_enabled_in_channel = 1;
+  fixed32 bootcount_since_enabled = 1;
 
   /*
    * Predefined message, to be sent as an auto-response
