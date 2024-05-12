@@ -1,2 +1,3 @@
 *AutoresponderConfig.response_text max_size:201
 *AutoresponderConfig.permitted_nodes max_count:8
+*AutoresponderConfig.bootcount_since_enabled int_size:8

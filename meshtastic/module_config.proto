@@ -699,15 +699,17 @@ message ModuleConfig {
 
     /*
      * How long will Autoresponder wait before responding again to the same node
+     * Int size 16 bytes
      */
-    fixed32 repeat_hours = 3;
+    uint32 repeat_hours = 3;
 
     /*
      * How long until the Autoresponder is automatically disabled
      * Mandatory for in-channel responses, with hard-coded maximum
      * Optional for DM responses, no enforced maximum
+     * Int size 16 bytes
      */
-    fixed32 expiration_hours = 4;
+    uint32 expiration_hours = 4;
 
     /* 
      * Should expiration_hours also apply to DM responses?

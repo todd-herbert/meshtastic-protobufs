@@ -17,8 +17,9 @@ message AutoresponderConfig {
    * Prevents a frequently rebooting node from bypassing rate limits indefinitely
    * Always applies to in-channel responses, optionally applies to DMs
    * Doesn't count when this protection is not needed
+   * Int size 8
    */
-  fixed32 bootcount_since_enabled = 1;
+  uint32 bootcount_since_enabled = 1;
 
   /*
    * Predefined message, to be sent as an auto-response

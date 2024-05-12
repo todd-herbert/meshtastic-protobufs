@@ -26,3 +26,6 @@
 
 *DetectionSensorConfig.monitor_pin int_size:8
 *DetectionSensorConfig.name max_size:20
+
+*AutoresponderConfig.repeat_hours int_size:16
+*AutoresponderConfig.expiration_hours int_size:16
