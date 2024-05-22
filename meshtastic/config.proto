@@ -360,6 +360,26 @@ message Config {
    */
   message PowerConfig {
     /*
+     * Defines different battery types
+     */
+    enum BatteryChemistry {
+
+      UNSPECIFIED = 0;
+
+      LI_ION = 1;
+
+      LIFEPO4 = 2;
+
+      LTO = 3;
+
+      NIMH = 4;
+
+      ALKALINE = 5;
+
+      LEAD_ACID = 6;
+    }
+
+    /*
      * Description: Will sleep everything as much as possible, for the tracker and sensor role this will also include the lora radio. 
      * Don't use this setting if you want to use your device with the phone apps or are using a device without a user button.
      * Technical Details: Works for ESP32 devices and NRF52 devices in the Sensor or Tracker roles
@@ -409,6 +429,10 @@ message Config {
      * I2C address of INA_2XX to use for reading device battery voltage
      */
     uint32 device_battery_ina_address = 9;
+
+    BatteryChemistry battery_chemistry = 10;
+
+    uint32 battery_cell_count = 11;
   }
 
   /*

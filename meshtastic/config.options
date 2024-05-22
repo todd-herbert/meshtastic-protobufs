@@ -15,3 +15,5 @@
 *LoRaConfig.channel_num int_size:16
 
 *PowerConfig.device_battery_ina_address int_size:8
+*PowerConfig.battery_chemistry int_size:8
+*PowerConfig.battery_cell_count int_size:8
